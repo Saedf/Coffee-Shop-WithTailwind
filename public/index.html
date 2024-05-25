@@ -76,6 +76,21 @@
           d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75"
         />
       </symbol>
+      <symbol
+        id="chevron-left"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5"
+        />
+      </symbol>
     </svg>
     <header
       class="fixed top-9 right-0 left-0 flex items-center w-[90%] px-10 py-5 h-24 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]"
@@ -122,15 +137,46 @@
           <!--  Cart Icon & Theme Switch Btn  -->
           <div class="flex items-center gap-x-5">
             <!--  Cart Icon  -->
-            <div>
+            <div class="relative group">
               <!--  Cart Icon Hover  -->
-              <div class="py-3">
+              <div class="py-3 cursor-pointer">
                 <svg class="w-8 h-8">
                   <use href="#shopping-cart"></use>
                 </svg>
               </div>
-              <!--  Cart Box  -->
-              <div></div>
+              <!--  Cart Box   -->
+              <div
+                class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all"
+              >
+                <!--  Cart Header   -->
+                <div
+                  class="flex items-center justify-between font-DanaMedium text-xs tracking-tightest"
+                >
+                  <span class="text-gray-300">1 مورد</span>
+                  <a href="#" class="flex items-center text-orange-300"
+                    >مشاهده سبد خرید
+                    <svg class="w-4 h-4">
+                      <use href="#chevron-left"></use>
+                    </svg>
+                  </a>
+                </div>
+                <!--  Cart Body   -->
+                <div>
+                  <img src="images/products/p1.png" alt="Product 1" />
+                  <div>
+                    <h4 class="font-DanaMedium text-zinc-700 dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                    <div>
+                      <span>14.500 تومان تخفیف</span>
+                      <div>
+                        175,000
+                        <span>تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  Cart Footer   -->
+                <div></div>
+              </div>
             </div>
             <!--  Theme Switch Btn  -->
             <div class="cursor-pointer" id="toggle-theme">

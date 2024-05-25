@@ -501,7 +501,7 @@ video {
 }
 
 body{
-  background-image: url("/public/images/svgs/headerBgDesktop.png");
+  background-image: url("/public/images/headerBgDesktop.webp");
   background-repeat: no-repeat;
 }
 
@@ -666,12 +666,21 @@ body{
   display: none;
 }
 
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
 
 .h-24 {
   height: 6rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-8 {
@@ -682,12 +691,20 @@ body{
   height: 100%;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-52 {
   width: 13rem;
 }
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[90\%\] {
@@ -785,6 +802,10 @@ body{
   background-color: rgb(255 255 255 / 0.2);
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -822,6 +843,11 @@ body{
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .tracking-normal {
   letter-spacing: 0em;
 }
@@ -838,6 +864,11 @@ body{
 .text-orange-200 {
   --tw-text-opacity: 1;
   color: rgb(254 215 170 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .text-zinc-700 {
