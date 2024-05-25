@@ -783,6 +783,17 @@ body{
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-divide-opacity));
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -857,6 +868,10 @@ body{
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
 .font-Dana {
@@ -973,6 +988,10 @@ body{
   display: inline-block;
 }
 
+.child\:pt-5 > * {
+  padding-top: 1.25rem;
+}
+
 .child\:leading-\[56px\] > * {
   line-height: 56px;
 }
@@ -994,6 +1013,15 @@ body{
 
 .dark\:hidden:is(.dark *) {
   display: none;
+}
+
+.dark\:divide-white:is(.dark *) > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-divide-opacity));
+}
+
+.dark\:divide-white\/10:is(.dark *) > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(255 255 255 / 0.1);
 }
 
 .dark\:border-white\/10:is(.dark *) {
