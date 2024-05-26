@@ -706,6 +706,26 @@ body{
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-1\/6 {
+  height: 16.666667%;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[55px\] {
+  height: 55px;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-30 {
   width: 7.5rem;
 }
@@ -740,6 +760,22 @@ body{
 
 .w-px {
   width: 1px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[13\] {
+  width: 13;
+}
+
+.w-\[138px\] {
+  width: 138px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .shrink-0 {
@@ -887,6 +923,11 @@ body{
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-1 {
@@ -1089,6 +1130,10 @@ body{
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
 
