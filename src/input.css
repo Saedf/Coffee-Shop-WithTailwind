@@ -38,5 +38,37 @@
          background-image: url("/public/images/headerBgDesktop.webp");
          background-repeat: no-repeat;
          
-            }
+   }
+}
+
+@layer components{
+    .submenu{
+       @apply flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+    }
+    .submenu_item--active{
+
+        @apply relative text-orange-300 pr-2.5;
+
+        /* padding-right:10px ;
+        position: relative;
+        color:  rgba(253, 186, 116, 1); */
+    }
+    .submenu_item--active::after{
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        background-color: rgba(253, 186, 116, 1);
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+         -o-border-radius: 100px;
+    }
+   
 }
