@@ -1,5 +1,7 @@
-const toggleThemeBtn = document.querySelector("#toggle-theme");
-toggleThemeBtn.addEventListener("click" , () => {
+const toggleThemeBtns = document.querySelectorAll(".toggle-theme");
+
+toggleThemeBtns.forEach(btn=>{
+   btn.addEventListener("click",function(){
     if (localStorage.theme === "dark"){
         document.documentElement.classList.remove("dark");
         localStorage.theme = "light";
@@ -7,4 +9,9 @@ toggleThemeBtn.addEventListener("click" , () => {
         document.documentElement.classList.add("dark");
         localStorage.setItem("theme" , "dark");
     }
+   })
 })
+// console.log(toggleThemeBtns)
+// toggleThemeBtn.addEventListener("click" , () => {
+   
+// })

@@ -229,7 +229,7 @@
                         </div>
                     </div>
                     <!--  Theme Switch Btn  -->
-                    <div class="cursor-pointer" id="toggle-theme">
+                    <div class="toggle-theme cursor-pointer">
                         <svg class="inline-block dark:hidden w-8 h-8">
                             <use href="#moon"></use>
                         </svg>
@@ -275,27 +275,29 @@
             </svg>
            </div>
 
-           <div class="space-y-6 text-orange-300 pt-8 px-2.5 mt-8  border-t border-b-gray-100 dark:border-b-white/10">
-             <a href="#" class="flex items-center gap-x-2">
+           <div class="flex flex-col items-start gap-y-6 text-orange-300 pt-8 px-2.5 mt-8  border-t border-b-gray-100 dark:border-b-white/10">
+             <a href="#" class="inline-flex items-center gap-x-2">
                 <svg class="w-5 h-5 rotate-180">
                     <use href="#arrow-left-on-rectangle"></use>
                 </svg> 
                 ورود  |  ثبت‌نام
   
              </a>
-            <div class="flex items-center gap-x-2 dark:hidden">
-                <svg class="w-5 h-5">
-                    <use href="#moon"></use>
-                </svg>
-                <span>تم تیره</span>
+             <div class="toggle-theme inline-block">
+                <div class="flex items-center gap-x-2 dark:hidden">
+                    <svg class="w-5 h-5">
+                        <use href="#moon"></use>
+                    </svg>
+                    <span>تم تیره</span>
+                 </div>
+                 <div class="hidden dark:flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                        <use href="#sun"></use>
+                    </svg>
+                    <span>تم روشن</span>
+                 </div>
              </div>
-             <div class="hidden dark:flex items-center gap-x-2">
-                <svg class="w-5 h-5">
-                    <use href="#sun"></use>
-                </svg>
-                <span>تم روشن</span>
-             </div>
-             <a href="#" class="flex items-center gap-x-2">
+             <a href="#" class="inline-flex items-center gap-x-2">
                 <svg class="w-5 h-5">
                     <use href="#shopping-cart"></use>
                 </svg>
