@@ -412,22 +412,17 @@
     </header>
 
     <!-- Header Size Mobile -->
-    <div
-      class="flex md:hidden items-center justify-between h-16 bg-white dark:bg-zinc-700 px-4"
-    >
+    <div class="flex md:hidden items-center justify-between h-16 bg-white dark:bg-zinc-700 px-4">
       <!-- Hamberger Menu Icon -->
-      <div>
+      <div class="nav-icon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
           <use href="#bars-3" class="use"></use>
         </svg>
       </div>
       <!-- Navigation Menu -->
-      <div
-        class="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20"
-      >
+      <div class="nav fixed top-0 bottom-0 -right-64 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
         <!-- Navigation Header -->
-        <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10"
-        >
+        <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
           <div class="flex gap-x-3.5">
             <svg class="w-[41px] h-10 text-orange-300">
               <use href="#logo"></use>
@@ -436,9 +431,11 @@
               <use href="#logo-type"></use>
             </svg>
           </div>
-          <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-            <use href="#x-mark"></use>
-          </svg>
+          <div class="nav-close-btn">
+            <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+                <use href="#x-mark"></use>
+              </svg>
+          </div>
         </div>
         <!-- Navigation Menu -->
         <div class="flex items-center bg-orange-200/20 text-orange-300 mb-4 pr-2.5 h-10 rounded-md">
@@ -505,8 +502,7 @@
             </li>
         </ul>
         <!-- Navigation Footer -->
-        <div class="flex flex-col items-start gap-y-6 text-orange-300 pt-8 px-2.5 mt-8 border-t border-b-gray-100 dark:border-b-white/10"
-        >
+        <div class="flex flex-col items-start gap-y-6 text-orange-300 py-8 px-2.5 mt-8 border-t border-b-gray-100 dark:border-b-white/10">
           <a href="#" class="inline-flex items-center gap-x-2">
             <svg class="w-5 h-5 rotate-180">
               <use href="#arrow-left-on-rectangle"></use>
@@ -548,9 +544,7 @@
         </svg>
       </div>
     </div>
-    <div
-      class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"
-    ></div>
+    <div class="overlay"></div>
     <script src="scripts/app.js"></script>
   </body>
 </html>
