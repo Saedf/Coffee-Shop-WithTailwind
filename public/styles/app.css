@@ -715,6 +715,10 @@ body{
   left: 0px;
 }
 
+.left-64 {
+  left: 16rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -754,6 +758,10 @@ body{
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .line-clamp-2 {
@@ -828,6 +836,10 @@ body{
   height: 100%;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -886,6 +898,10 @@ body{
 
 .w-px {
   width: 1px;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .shrink-0 {
@@ -1120,6 +1136,10 @@ body{
   padding-top: 0.75rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .font-Dana {
   font-family: Dana;
 }
@@ -1313,6 +1333,11 @@ body{
 .dark\:bg-zinc-800:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-teal-500:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
 }
 
 .dark\:text-emerald-500:is(.dark *) {
