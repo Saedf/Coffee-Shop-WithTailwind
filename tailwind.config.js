@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       boxShadow: {
-        "normal": "0px 1px 10px 0px rgba(0, 0, 0, 0.05)",
+        normal: "0px 1px 10px 0px rgba(0, 0, 0, 0.05)",
       },
       borderRadius: {
         "4xl": "2rem",
@@ -26,19 +26,32 @@ module.exports = {
         MorabbaMedium: "Morrabba Medium",
         MorabbaBold: "Morabba Bold",
       },
-      letterSpacing:{
-        "tightest":'-0.065em' 
+      letterSpacing: {
+        tightest: "-0.065em",
       },
-      spacing:{
-        "30":"7.5rem"
+      spacing: {
+        30: "7.5rem",
+      },
+      container:{
+        center:true,
+        padding:{
+          DEFAULT: "1rem",
+          lg: "0.625rem",
+
+        }
       }
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
   },
   plugins: [
-      function({addVariant}){
-        addVariant('child','& > *');
-        addVariant('child-hover','& > *:hover');
-        
-      }
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
   ],
 };
