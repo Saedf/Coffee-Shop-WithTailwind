@@ -622,6 +622,12 @@ video {
   padding-left: 1rem;
 }
 
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -890,6 +896,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-full {
@@ -1165,6 +1175,22 @@ video {
 
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.bg-home-mobile {
+  background-image: url(../images/headerBgMobile.webp);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-\[center_top\] {
+  background-position: center top;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-5 {
@@ -1465,6 +1491,16 @@ video {
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 480px) {
+  .xs\:aspect-\[2\/1\] {
+    aspect-ratio: 2/1;
+  }
+
+  .xs\:h-auto {
+    height: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:my-8 {
     margin-top: 2rem;
@@ -1483,6 +1519,10 @@ video {
     display: none;
   }
 
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
+
   .md\:h-0 {
     height: 0px;
   }
@@ -1497,6 +1537,10 @@ video {
 
   .md\:max-w-\[460px\] {
     max-width: 460px;
+  }
+
+  .md\:bg-home-desktop {
+    background-image: url(../images/headerBgDesktop.webp);
   }
 
   .md\:text-2xl {
