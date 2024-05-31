@@ -19,7 +19,7 @@
     </script>
   </head>
 
-  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
     <!-- All App Icons -->
     <svg class="hidden">
       <symbol
@@ -215,7 +215,11 @@
       </symbol>
       <symbol id="curve" width="100" height="22" viewBox="0 0 100 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z"/>
-        </symbol>
+      </symbol>
+      <symbol id="chevron-down-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </symbol>
+      
       
       
     </svg>
@@ -633,11 +637,12 @@
         
           <!-- Arrow Circle -->
           <div class="absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex items-center justify-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full ">
-            <svg class="w-4 h-4 text-zinc-700 dark:text-white">
-              <use href="#chevron-down"></use>
+            <svg class="w-5 h-5 text-zinc-700 dark:text-white">
+              <use href="#chevron-down-mini"></use>
             </svg>
           </div>
         </section>
+        <section class="products"></section>
       </main>
     <div class="overlay"></div>
     <script src="scripts/app.js"></script>
