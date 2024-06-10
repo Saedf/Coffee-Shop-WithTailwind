@@ -40,7 +40,7 @@ module.exports = {
           DEFAULT: "1rem",
           lg: "0.625rem",
         },
-      },
+      }
     },
     screens: {
       xs: "480px",

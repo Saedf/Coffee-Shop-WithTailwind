@@ -1570,9 +1570,75 @@ video {
   background-image: url(../images/headerBgMobile.webp);
 }
 
+.bg-\[linear-gradient\(152deg\2c _\#fff\2c _\#00bfd8_42\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(152deg, #fff, #00bfd8 42%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#00bfd8_42\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #fff, #00bfd8 42%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#10B981\2c _\#00bfd8_42\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #10B981, #00bfd8 42%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#10B981\2c _\#059669_42\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #10B981, #059669 42%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#10B981\2c _\#059669_\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #10B981, #059669 %, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#10B981\2c _\#059669_100\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #10B981, #059669 100%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_42\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 42%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_0\%\2c _\#0083f5\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 0%, #0083f5);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_0\%\2c _\#059669\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 0%, #059669);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_0\%\2c _\#059669_\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 0%, #059669 );
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_0\%\2c _\#059669_100\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 0%, #059669 100);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_0\%\2c _\#059669_100\%\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 0%, #059669 100%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_1000\%\2c _\#059669_100\%\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 1000%, #059669 100%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#fff\2c _\#10B981_100\%\2c _\#059669_100\%\)\] {
+  background-image: linear-gradient(90deg, #fff, #10B981 100%, #059669 100%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#10B981_0\%\2c _\#059669_100\%\)\] {
+  background-image: linear-gradient(90deg, #10B981 0%, #059669 100%);
+}
+
 .from-emerald-500 {
   --tw-gradient-from: #10b981 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(16 185 129 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
