@@ -1102,6 +1102,10 @@ video {
   margin-top: auto;
 }
 
+.mb-\[22px\] {
+  margin-bottom: 22px;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2144,6 +2148,14 @@ video {
 
   .md\:mt-2\.5 {
     margin-top: 0.625rem;
+  }
+
+  .md\:mb-\[\] {
+    margin-bottom: ;
+  }
+
+  .md\:mb-\[22px\] {
+    margin-bottom: 22px;
   }
 
   .md\:inline-block {
