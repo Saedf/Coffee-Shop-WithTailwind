@@ -964,6 +964,10 @@ video {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-left-64 {
   left: -16rem;
 }
@@ -1066,14 +1070,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-9 {
-  margin-bottom: 2.25rem;
-}
-
-.mr-24 {
-  margin-right: 6rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1167,10 +1163,6 @@ video {
   height: 7.5rem;
 }
 
-.h-36 {
-  height: 9rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -1205,6 +1197,10 @@ video {
 
 .h-\[30px\] {
   height: 30px;
+}
+
+.h-\[54px\] {
+  height: 54px;
 }
 
 .h-\[72px\] {
@@ -1269,6 +1265,10 @@ video {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.w-\[138px\] {
+  width: 138px;
 }
 
 .w-\[144px\] {
@@ -1489,6 +1489,10 @@ video {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1515,6 +1519,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-bl-4xl {
+  border-bottom-left-radius: 2rem;
 }
 
 .border-2 {
@@ -1593,6 +1601,10 @@ video {
   background-image: linear-gradient(90deg, #10B981 0%, #059669 100%);
 }
 
+.bg-\[linear-gradient\(90deg\2c _\#FED7AA_0\%\2c _\#FDBA74_100\%\)\] {
+  background-image: linear-gradient(90deg, #FED7AA 0%, #FDBA74 100%);
+}
+
 .bg-home-mobile {
   background-image: url(../images/headerBgMobile.webp);
 }
@@ -1603,8 +1615,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-orange-200\/80 {
+  --tw-gradient-from: rgb(254 215 170 / 0.8) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 215 170 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-emerald-600 {
   --tw-gradient-to: #059669 var(--tw-gradient-to-position);
+}
+
+.to-orange-300\/80 {
+  --tw-gradient-to: rgb(253 186 116 / 0.8) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -1621,6 +1643,14 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-2\.5 {
+  padding: 0.625rem;
 }
 
 .p-5 {
@@ -1786,6 +1816,11 @@ video {
 
 .tracking-tightest {
   letter-spacing: -0.065em;
+}
+
+.text-amber-900 {
+  --tw-text-opacity: 1;
+  color: rgb(120 53 15 / var(--tw-text-opacity));
 }
 
 .text-emerald-600 {
@@ -2108,6 +2143,10 @@ video {
     margin-bottom: 5rem;
   }
 
+  .md\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .md\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -2263,16 +2302,6 @@ video {
          column-gap: 0.75rem;
   }
 
-  .md\:gap-x-5 {
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-  }
-
-  .md\:gap-x-6 {
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
-  }
-
   .md\:gap-x-\[18px\] {
     -moz-column-gap: 18px;
          column-gap: 18px;
@@ -2280,11 +2309,6 @@ video {
 
   .md\:bg-home-desktop {
     background-image: url(../images/headerBgDesktop.webp);
-  }
-
-  .md\:px-11 {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
   }
 
   .md\:px-3 {
@@ -2304,6 +2328,10 @@ video {
 
   .md\:pb-1 {
     padding-bottom: 0.25rem;
+  }
+
+  .md\:pb-2 {
+    padding-bottom: 0.5rem;
   }
 
   .md\:pr-12 {
@@ -2371,6 +2399,12 @@ video {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
+
+  .md\:flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2378,12 +2412,12 @@ video {
     height: 9rem;
   }
 
-  .lg\:w-\[90\%\] {
-    width: 90%;
-  }
-
   .lg\:w-\[100px\] {
     width: 100px;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
   }
 
   .lg\:grid-cols-4 {
@@ -2394,16 +2428,6 @@ video {
     flex-wrap: nowrap;
   }
 
-  .lg\:gap-x-5 {
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-  }
-
-  .lg\:gap-x-9 {
-    -moz-column-gap: 2.25rem;
-         column-gap: 2.25rem;
-  }
-
   .lg\:gap-x-3 {
     -moz-column-gap: 0.75rem;
          column-gap: 0.75rem;
@@ -2412,6 +2436,16 @@ video {
   .lg\:gap-x-4 {
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+
+  .lg\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+
+  .lg\:gap-x-9 {
+    -moz-column-gap: 2.25rem;
+         column-gap: 2.25rem;
   }
 
   .lg\:px-10 {
