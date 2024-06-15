@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -964,6 +964,10 @@ video {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-left-64 {
   left: -16rem;
 }
@@ -1195,6 +1199,10 @@ video {
   height: 30px;
 }
 
+.h-\[54px\] {
+  height: 54px;
+}
+
 .h-\[72px\] {
   height: 72px;
 }
@@ -1257,6 +1265,10 @@ video {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.w-\[138px\] {
+  width: 138px;
 }
 
 .w-\[144px\] {
@@ -1477,6 +1489,10 @@ video {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1503,6 +1519,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-bl-4xl {
+  border-bottom-left-radius: 2rem;
 }
 
 .border-2 {
@@ -1581,6 +1601,10 @@ video {
   background-image: linear-gradient(90deg, #10B981 0%, #059669 100%);
 }
 
+.bg-\[linear-gradient\(90deg\2c _\#FED7AA_0\%\2c _\#FDBA74_100\%\)\] {
+  background-image: linear-gradient(90deg, #FED7AA 0%, #FDBA74 100%);
+}
+
 .bg-home-mobile {
   background-image: url(../images/headerBgMobile.webp);
 }
@@ -1591,8 +1615,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-orange-200\/80 {
+  --tw-gradient-from: rgb(254 215 170 / 0.8) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 215 170 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-emerald-600 {
   --tw-gradient-to: #059669 var(--tw-gradient-to-position);
+}
+
+.to-orange-300\/80 {
+  --tw-gradient-to: rgb(253 186 116 / 0.8) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -1609,6 +1643,14 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-2\.5 {
+  padding: 0.625rem;
 }
 
 .p-5 {
@@ -1774,6 +1816,11 @@ video {
 
 .tracking-tightest {
   letter-spacing: -0.065em;
+}
+
+.text-amber-900 {
+  --tw-text-opacity: 1;
+  color: rgb(120 53 15 / var(--tw-text-opacity));
 }
 
 .text-emerald-600 {
@@ -2096,6 +2143,10 @@ video {
     margin-bottom: 5rem;
   }
 
+  .md\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .md\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -2279,6 +2330,10 @@ video {
     padding-bottom: 0.25rem;
   }
 
+  .md\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
   .md\:pr-12 {
     padding-right: 3rem;
   }
@@ -2343,6 +2398,12 @@ video {
   .md\:text-xl\/6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+
+  .md\:flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

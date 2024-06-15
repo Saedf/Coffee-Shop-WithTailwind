@@ -175,8 +175,7 @@
 
   </svg>
   <!-- App Header -->
-  <header
-    class="fixed top-9 z-50 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] px-5 lg:px-10 py-5 h-24 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+  <header   class="fixed top-9 z-50 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] px-5 lg:px-10 py-5 h-24 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
     <div class="flex items-center justify-between w-full">
       <!--  Logo Menu  -->
       <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
@@ -190,7 +189,7 @@
             <a href="#">صفحه اصلی</a>
           </li>
           <!-- Has Sub -->
-          <li class="relative group">
+          <li class="relative  group">
             <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
             <!-- Sub Menu -->
             <div
@@ -1489,12 +1488,13 @@
         </div>
 
       </div>
+      </div>
     </section>
     <section class="coffee-club mb-8 md:mb-20 ">
       <div class="container">
        
              <!-- bg-gradient-to-r from-emerald-500 to-emerald-600 -->
-        <div class="flex items-center flex-wrap lg:flex-nowrap lg:gap-x-4 xl:gap-x-24 gap-y-9 bg-[linear-gradient(90deg,_#10B981_0%,_#059669_100%)]  text-white lg:py-8 md:py-3 px-3 lg:px-5 xl:px-11  lg:h-36  rounded-2xl">
+        <div class="flex items-center flex-wrap lg:flex-nowrap lg:gap-x-4 xl:gap-x-24 gap-y-9  bg-[linear-gradient(90deg,_#10B981_0%,_#059669_100%)]  text-white lg:py-8 md:py-3 px-3 lg:px-5 xl:px-11  lg:h-36  rounded-2xl">
               
            <div class="flex items-center md:shrink-0 gap-x-3 lg:gap-x-4 xl:gap-x-6">
             <img src="images/club/diamond.png" class="w-[87px] lg:w-[100px] xl:w-[110px] " alt="Coffee Club">
@@ -1542,6 +1542,41 @@
         </div>
       </div>
     </section>
+    <section class="blogs mb-8 md:mb-28">
+      <div class="container">
+         <!-- Section Head -->
+         <div class="flex items-end justify-between mb-5 md:mb-12">
+          <div>
+            <h3 class="section-title">مطالب خواندنی</h3>
+          </div>
+          <a href="#" class="section-link">
+            <span class="hidden md:inline-block">مشاهده همه مطالب</span>
+            <span class="inline-block md:hidden">مشاهده همه</span>
+            <svg class="h-5 w-5">
+              <use href="#chevron-left-mini"></use>
+            </svg>
+          </a>
+        </div>
+          <!-- Section Content -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5  md:gap-5"> 
+          <div class="p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal  rounded-2xl">
+              <div class="relative rounded-2xl rounded-bl-4xl overflow-hidden">
+                <img src="images/blogs/blog-1.png" alt="Blog 1">
+                <!-- background: linear-gradient(90deg, #FED7AA 0%, #FDBA74 100%); -->
+                 <!-- bg-[linear-gradient(90deg,_#FED7AA_0%,_#FDBA74_100%)] -->
+                <div class="absolute inset-0 w-full h-full hidden md:flex-center bg-gradient-to-r from-orange-200/80 to-orange-300/80 ">
+                  <svg class="w-[138px] h-[54px] text-amber-900">
+                    <use href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+ 
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </main>
   <div class="overlay"></div>
   <script src="scripts/app.js"></script>
