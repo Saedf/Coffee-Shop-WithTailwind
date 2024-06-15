@@ -1625,8 +1625,8 @@ video {
   --tw-gradient-to: #059669 var(--tw-gradient-to-position);
 }
 
-.to-orange-300\/80 {
-  --tw-gradient-to: rgb(253 186 116 / 0.8) var(--tw-gradient-to-position);
+.to-orange-700\/80 {
+  --tw-gradient-to: rgb(194 65 12 / 0.8) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
