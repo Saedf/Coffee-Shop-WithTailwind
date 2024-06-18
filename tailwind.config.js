@@ -3,10 +3,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        "home-mobile": "url(../images/headerBgMobile.webp)",
-        "home-desktop": "url(../images/headerBgDesktop.webp)",
-      },
+      
       colors: {
         brown: {
           100: "#ECE0D1",
@@ -43,7 +40,11 @@ module.exports = {
           DEFAULT: "1rem",
           lg: "0.625rem",
         },
-      }
+      },
+      backgroundImage: {
+        "home-mobile": "url(../images/headerBgMobile.webp)",
+        "home-desktop": "url(../images/headerBgDesktop.webp)",
+      },
     },
     screens: {
       xs: "480px",
