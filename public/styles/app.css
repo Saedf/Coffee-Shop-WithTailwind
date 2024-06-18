@@ -1070,6 +1070,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-\[18px\] {
+  margin-left: 18px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1096,22 +1100,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-\[18px\] {
-  margin-left: 18px;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
-.ml-0 {
-  margin-left: 0px;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .line-clamp-2 {
@@ -1219,6 +1207,10 @@ video {
   height: 54px;
 }
 
+.h-\[61px\] {
+  height: 61px;
+}
+
 .h-\[72px\] {
   height: 72px;
 }
@@ -1229,14 +1221,6 @@ video {
 
 .h-px {
   height: 1px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[61px\] {
-  height: 61px;
 }
 
 .min-h-screen {
@@ -1339,12 +1323,12 @@ video {
   width: 1px;
 }
 
-.max-w-\[201px\] {
-  max-width: 201px;
-}
-
 .max-w-\[193px\] {
   max-width: 193px;
+}
+
+.max-w-\[201px\] {
+  max-width: 201px;
 }
 
 .shrink-0 {
@@ -1569,18 +1553,9 @@ video {
   border-top-width: 3px;
 }
 
-.border-r {
-  border-right-width: 1px;
-}
-
 .border-orange-300 {
   --tw-border-opacity: 1;
   border-color: rgb(253 186 116 / var(--tw-border-opacity));
-}
-
-.border-gray-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .border-b-gray-100 {
@@ -1630,16 +1605,12 @@ video {
   background-color: rgb(255 255 255 / 0.2);
 }
 
-.bg-\[linear-gradient\(270deg\2c _\#FDBA74_0\%\2c _\#FED7AA_100\%\)\] {
-  background-image: linear-gradient(270deg, #FDBA74 0%, #FED7AA 100%);
-}
-
-.bg-\[linear-gradient\(90deg\2c _\#10B981_0\%\2c _\#059669_100\%\)\] {
-  background-image: linear-gradient(90deg, #10B981 0%, #059669 100%);
-}
-
 .bg-\[linear-gradient\(90deg\2c _\#FED7AA_0\%\2c _\#FDBA74_100\%\)\] {
   background-image: linear-gradient(90deg, #FED7AA 0%, #FDBA74 100%);
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-home-mobile {
@@ -1658,12 +1629,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-orange-300 {
+  --tw-gradient-from: #fdba74 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(253 186 116 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-emerald-600 {
   --tw-gradient-to: #059669 var(--tw-gradient-to-position);
 }
 
-.to-orange-700\/80 {
-  --tw-gradient-to: rgb(194 65 12 / 0.8) var(--tw-gradient-to-position);
+.to-orange-200 {
+  --tw-gradient-to: #fed7aa var(--tw-gradient-to-position);
 }
 
 .to-orange-300\/80 {
@@ -1786,10 +1763,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
 }
 
 .text-left {
@@ -1992,18 +1965,6 @@ video {
   transition-delay: 75ms;
 }
 
-.delay-0 {
-  transition-delay: 0s;
-}
-
-.delay-150 {
-  transition-delay: 150ms;
-}
-
-.delay-100 {
-  transition-delay: 100ms;
-}
-
 .flex-center {
   display: flex;
   align-items: center;
@@ -2098,15 +2059,6 @@ video {
   border-color: rgb(255 255 255 / 0.1);
 }
 
-.dark\:border-white:is(.dark *) {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.dark\:border-white\/10:is(.dark *) {
-  border-color: rgb(255 255 255 / 0.1);
-}
-
 .dark\:border-b-white\/10:is(.dark *) {
   border-bottom-color: rgb(255 255 255 / 0.1);
 }
@@ -2114,6 +2066,10 @@ video {
 .dark\:bg-emerald-500:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-white\/10:is(.dark *) {
+  background-color: rgb(255 255 255 / 0.1);
 }
 
 .dark\:bg-zinc-700:is(.dark *) {
@@ -2124,15 +2080,6 @@ video {
 .dark\:bg-zinc-800:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-white:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-white\/10:is(.dark *) {
-  background-color: rgb(255 255 255 / 0.1);
 }
 
 .dark\:text-emerald-500:is(.dark *) {
@@ -2425,12 +2372,12 @@ video {
     padding-top: 1.25rem;
   }
 
-  .md\:font-DanaMedium {
-    font-family: Dana Medium;
-  }
-
   .md\:font-Dana {
     font-family: Dana;
+  }
+
+  .md\:font-DanaMedium {
+    font-family: Dana Medium;
   }
 
   .md\:text-2xl {
@@ -2468,6 +2415,11 @@ video {
     line-height: 34px;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -2481,11 +2433,6 @@ video {
   .md\:text-xl\/6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .md\:flex-center {

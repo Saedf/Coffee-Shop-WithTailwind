@@ -1,9 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {
+        "home-mobile": "url(../images/headerBgMobile.webp)",
+        "home-desktop": "url(../images/headerBgDesktop.webp)",
+      },
       colors: {
         brown: {
           100: "#ECE0D1",
@@ -49,10 +52,7 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
-    backgroundImage: {
-      "home-mobile": "url(../images/headerBgMobile.webp)",
-      "home-desktop": "url(../images/headerBgDesktop.webp)",
-    },
+   
   },
   plugins: [
     function ({ addVariant }) {
@@ -61,3 +61,4 @@ module.exports = {
     },
   ],
 };
+
