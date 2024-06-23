@@ -3,7 +3,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      
+
       colors: {
         brown: {
           100: "#ECE0D1",
@@ -30,9 +30,10 @@ module.exports = {
         tightest: "-0.065em",
       },
       spacing: {
+        "4.5": "1.125rem",
         "30": "7.5rem",
-        "25":"6.25rem",
-        "50":"12.5rem"
+        "25": "6.25rem",
+        "50": "12.5rem"
       },
       container: {
         center: true,
@@ -53,7 +54,7 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
-   
+
   },
   plugins: [
     function ({ addVariant }) {
